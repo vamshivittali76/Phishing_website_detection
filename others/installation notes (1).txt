@@ -1,0 +1,356 @@
+
+(base) C:\Users\india>conda create -n mouse python=3.6
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.9.2
+  latest version: 4.10.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\india\anaconda3\envs\mouse
+
+  added / updated specs:
+    - python=3.6
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2020.12.5          |   py36haa95532_0         140 KB
+    pip-21.0.1                 |   py36haa95532_0         1.8 MB
+    python-3.6.13              |       h3758d61_0        14.6 MB
+    setuptools-52.0.0          |   py36haa95532_0         723 KB
+    sqlite-3.35.4              |       h2bbff1b_0         761 KB
+    vc-14.2                    |       h21ff451_1           8 KB
+    vs2015_runtime-14.27.29016 |       h5e58377_2        1007 KB
+    wheel-0.36.2               |     pyhd3eb1b0_0          33 KB
+    wincertstore-0.2           |   py36h7fe50ca_0          14 KB
+    ------------------------------------------------------------
+                                           Total:        19.0 MB
+
+The following NEW packages will be INSTALLED:
+
+  certifi            pkgs/main/win-64::certifi-2020.12.5-py36haa95532_0
+  pip                pkgs/main/win-64::pip-21.0.1-py36haa95532_0
+  python             pkgs/main/win-64::python-3.6.13-h3758d61_0
+  setuptools         pkgs/main/win-64::setuptools-52.0.0-py36haa95532_0
+  sqlite             pkgs/main/win-64::sqlite-3.35.4-h2bbff1b_0
+  vc                 pkgs/main/win-64::vc-14.2-h21ff451_1
+  vs2015_runtime     pkgs/main/win-64::vs2015_runtime-14.27.29016-h5e58377_2
+  wheel              pkgs/main/noarch::wheel-0.36.2-pyhd3eb1b0_0
+  wincertstore       pkgs/main/win-64::wincertstore-0.2-py36h7fe50ca_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+setuptools-52.0.0    | 723 KB    | ############################################################################ | 100%
+certifi-2020.12.5    | 140 KB    | ############################################################################ | 100%
+sqlite-3.35.4        | 761 KB    | ############################################################################ | 100%
+vc-14.2              | 8 KB      | ############################################################################ | 100%
+python-3.6.13        | 14.6 MB   | ############################################################################ | 100%
+vs2015_runtime-14.27 | 1007 KB   | ############################################################################ | 100%
+pip-21.0.1           | 1.8 MB    | ############################################################################ | 100%
+wheel-0.36.2         | 33 KB     | ############################################################################ | 100%
+wincertstore-0.2     | 14 KB     | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate mouse
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+(base) C:\Users\india>conda activate mouse
+
+(mouse) C:\Users\india>cd downloads
+
+(mouse) C:\Users\india\Downloads>cd Mouse_Cursor_Control_Handsfree
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree>pip install -r requirements.txt
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree>cd Mouse_Cursor_Control_Handsfree
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>pip install -r requirements.txt
+Collecting Numpy
+  Downloading numpy-1.19.5-cp36-cp36m-win_amd64.whl (13.2 MB)
+     |████████████████████████████████| 13.2 MB 3.3 MB/s
+ERROR: Could not find a version that satisfies the requirement OpenCV
+ERROR: No matching distribution found for OpenCV
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>pip install opencv-python==3.2.0
+ERROR: Could not find a version that satisfies the requirement opencv-python==3.2.0
+ERROR: No matching distribution found for opencv-python==3.2.0
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>pip install opencv==3.2.0
+ERROR: Could not find a version that satisfies the requirement opencv==3.2.0
+ERROR: No matching distribution found for opencv==3.2.0
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>pip install opencv-python
+Collecting opencv-python
+  Downloading opencv_python-4.5.1.48-cp36-cp36m-win_amd64.whl (34.9 MB)
+     |████████████████████████████████| 34.9 MB 93 kB/s
+Collecting numpy>=1.13.3
+  Using cached numpy-1.19.5-cp36-cp36m-win_amd64.whl (13.2 MB)
+Installing collected packages: numpy, opencv-python
+Successfully installed numpy-1.19.5 opencv-python-4.5.1.48
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>pip install pyautogui==0.9.36
+Collecting pyautogui==0.9.36
+  Downloading PyAutoGUI-0.9.36.tar.gz (46 kB)
+     |████████████████████████████████| 46 kB 397 kB/s
+Collecting pymsgbox
+  Downloading PyMsgBox-1.0.9.tar.gz (18 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... done
+Collecting PyTweening>=1.0.1
+  Downloading PyTweening-1.0.3.zip (15 kB)
+Collecting Pillow
+  Downloading Pillow-8.2.0-cp36-cp36m-win_amd64.whl (2.2 MB)
+     |████████████████████████████████| 2.2 MB 3.2 MB/s
+Collecting pyscreeze
+  Downloading PyScreeze-0.1.26.tar.gz (23 kB)
+Building wheels for collected packages: pyautogui, PyTweening, pymsgbox, pyscreeze
+  Building wheel for pyautogui (setup.py) ... done
+  Created wheel for pyautogui: filename=PyAutoGUI-0.9.36-py3-none-any.whl size=26860 sha256=6e9583df79bb8455f4ce12cb69712671df34fdc7f97f3791034db91a7831fb0a
+  Stored in directory: c:\users\india\appdata\local\pip\cache\wheels\71\0c\c3\a923bf6842120b42b24b17420ba123f1f6d3e5453c2dc79016
+  Building wheel for PyTweening (setup.py) ... done
+  Created wheel for PyTweening: filename=PyTweening-1.0.3-py3-none-any.whl size=3815 sha256=130f1df6c48799c4e8869cb57b3c3051d605c7900f7c1d2a275ea4549a9c8cca
+  Stored in directory: c:\users\india\appdata\local\pip\cache\wheels\7a\24\bf\10da4dbb90f0fe3613d4f912d7b94647b71b872df1c5b200b1
+  Building wheel for pymsgbox (PEP 517) ... done
+  Created wheel for pymsgbox: filename=PyMsgBox-1.0.9-py3-none-any.whl size=7420 sha256=7a3d17b212f6d67c9c3ef378d079632e81fd275a0af949ffb2a39dd2519c5b57
+  Stored in directory: c:\users\india\appdata\local\pip\cache\wheels\cd\09\9c\c9d9b36b0a93555e8f47cb748f5c7455db76bf42ba4a14c35c
+  Building wheel for pyscreeze (setup.py) ... done
+  Created wheel for pyscreeze: filename=PyScreeze-0.1.26-py3-none-any.whl size=11933 sha256=2d1fcaf38a64ec96ece0c73f0f2b9621fcde1f005614ec091a1ebd7ede199cbf
+  Stored in directory: c:\users\india\appdata\local\pip\cache\wheels\43\9d\82\7b9d42ea269cada2caf7edab61f8fa7a9f0abaa71e039083e6
+Successfully built pyautogui PyTweening pymsgbox pyscreeze
+Installing collected packages: Pillow, PyTweening, pyscreeze, pymsgbox, pyautogui
+Successfully installed Pillow-8.2.0 PyTweening-1.0.3 pyautogui-0.9.36 pymsgbox-1.0.9 pyscreeze-0.1.26
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>pip install dlib==19.4.0
+Collecting dlib==19.4.0
+  Downloading dlib-19.4.0.tar.gz (4.0 MB)
+     |████████████████████████████████| 4.0 MB 782 kB/s
+Building wheels for collected packages: dlib
+  Building wheel for dlib (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: 'C:\Users\india\anaconda3\envs\mouse\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-_ligtc1x\\dlib_1fc85b734be34783845f808c80dcb2be\\setup.py'"'"'; __file__='"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-_ligtc1x\\dlib_1fc85b734be34783845f808c80dcb2be\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d 'C:\Users\india\AppData\Local\Temp\pip-wheel-32pn8wj6'
+       cwd: C:\Users\india\AppData\Local\Temp\pip-install-_ligtc1x\dlib_1fc85b734be34783845f808c80dcb2be\
+  Complete output (5 lines):
+  running bdist_wheel
+  running build
+  error: Cannot find cmake, ensure it is installed and in the path.
+  You can install cmake using the instructions at https://cmake.org/install/
+  You can also specify its path with --cmake parameter.
+  ----------------------------------------
+  ERROR: Failed building wheel for dlib
+  Running setup.py clean for dlib
+Failed to build dlib
+Installing collected packages: dlib
+    Running setup.py install for dlib ... error
+    ERROR: Command errored out with exit status 1:
+     command: 'C:\Users\india\anaconda3\envs\mouse\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-_ligtc1x\\dlib_1fc85b734be34783845f808c80dcb2be\\setup.py'"'"'; __file__='"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-_ligtc1x\\dlib_1fc85b734be34783845f808c80dcb2be\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\india\AppData\Local\Temp\pip-record-i_rwfn3f\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Users\india\anaconda3\envs\mouse\Include\dlib'
+         cwd: C:\Users\india\AppData\Local\Temp\pip-install-_ligtc1x\dlib_1fc85b734be34783845f808c80dcb2be\
+    Complete output (5 lines):
+    running install
+    running build
+    error: Cannot find cmake, ensure it is installed and in the path.
+    You can install cmake using the instructions at https://cmake.org/install/
+    You can also specify its path with --cmake parameter.
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'C:\Users\india\anaconda3\envs\mouse\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-_ligtc1x\\dlib_1fc85b734be34783845f808c80dcb2be\\setup.py'"'"'; __file__='"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-_ligtc1x\\dlib_1fc85b734be34783845f808c80dcb2be\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\india\AppData\Local\Temp\pip-record-i_rwfn3f\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Users\india\anaconda3\envs\mouse\Include\dlib' Check the logs for full command output.
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>pip install imutils==0.4.6
+Collecting imutils==0.4.6
+  Downloading imutils-0.4.6.tar.gz (14 kB)
+Building wheels for collected packages: imutils
+  Building wheel for imutils (setup.py) ... done
+  Created wheel for imutils: filename=imutils-0.4.6-py3-none-any.whl size=22841 sha256=fa99706aa51b3eb94c4c8554be7054def184ea48e6204c6633a8b290546b0c49
+  Stored in directory: c:\users\india\appdata\local\pip\cache\wheels\f2\35\2d\6c4039be2b9a168b9876508f6890bbb0c480f56cd67c6e0ee2
+Successfully built imutils
+Installing collected packages: imutils
+Successfully installed imutils-0.4.6
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>python mouse-cursor-control.py
+Traceback (most recent call last):
+  File "mouse-cursor-control.py", line 6, in <module>
+    import dlib
+ModuleNotFoundError: No module named 'dlib'
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>pip install dlib
+Collecting dlib
+  Downloading dlib-19.22.0.tar.gz (7.4 MB)
+     |████████████████████████████████| 7.4 MB 3.3 MB/s
+Building wheels for collected packages: dlib
+  Building wheel for dlib (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: 'C:\Users\india\anaconda3\envs\mouse\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-pte7cc7f\\dlib_ff2eb99070a04a89bae6b65e2a1885ef\\setup.py'"'"'; __file__='"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-pte7cc7f\\dlib_ff2eb99070a04a89bae6b65e2a1885ef\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d 'C:\Users\india\AppData\Local\Temp\pip-wheel-61hxxh5o'
+       cwd: C:\Users\india\AppData\Local\Temp\pip-install-pte7cc7f\dlib_ff2eb99070a04a89bae6b65e2a1885ef\
+  Complete output (8 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  package init file 'tools\python\dlib\__init__.py' not found (or not a regular file)
+  running build_ext
+
+  ERROR: CMake must be installed to build dlib
+
+  ----------------------------------------
+  ERROR: Failed building wheel for dlib
+  Running setup.py clean for dlib
+Failed to build dlib
+Installing collected packages: dlib
+    Running setup.py install for dlib ... error
+    ERROR: Command errored out with exit status 1:
+     command: 'C:\Users\india\anaconda3\envs\mouse\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-pte7cc7f\\dlib_ff2eb99070a04a89bae6b65e2a1885ef\\setup.py'"'"'; __file__='"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-pte7cc7f\\dlib_ff2eb99070a04a89bae6b65e2a1885ef\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\india\AppData\Local\Temp\pip-record-001avw4x\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Users\india\anaconda3\envs\mouse\Include\dlib'
+         cwd: C:\Users\india\AppData\Local\Temp\pip-install-pte7cc7f\dlib_ff2eb99070a04a89bae6b65e2a1885ef\
+    Complete output (8 lines):
+    running install
+    running build
+    running build_py
+    package init file 'tools\python\dlib\__init__.py' not found (or not a regular file)
+    running build_ext
+
+    ERROR: CMake must be installed to build dlib
+
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'C:\Users\india\anaconda3\envs\mouse\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-pte7cc7f\\dlib_ff2eb99070a04a89bae6b65e2a1885ef\\setup.py'"'"'; __file__='"'"'C:\\Users\\india\\AppData\\Local\\Temp\\pip-install-pte7cc7f\\dlib_ff2eb99070a04a89bae6b65e2a1885ef\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\india\AppData\Local\Temp\pip-record-001avw4x\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Users\india\anaconda3\envs\mouse\Include\dlib' Check the logs for full command output.
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>python mouse-cursor-control.py
+Traceback (most recent call last):
+  File "mouse-cursor-control.py", line 6, in <module>
+    import dlib
+ModuleNotFoundError: No module named 'dlib'
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>pip install cmake
+Collecting cmake
+  Downloading cmake-3.18.4.post1-py3-none-win_amd64.whl (34.7 MB)
+     |████████████████████████████████| 34.7 MB 939 kB/s
+Installing collected packages: cmake
+Successfully installed cmake-3.18.4.post1
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>conda install -c conda-forge dlib
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.9.2
+  latest version: 4.10.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\india\anaconda3\envs\mouse
+
+  added / updated specs:
+    - dlib
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    certifi-2020.12.5          |   py36ha15d459_1         144 KB  conda-forge
+    dlib-19.22.0               |   py36h9f2b841_0         3.5 MB  conda-forge
+    intel-openmp-2021.2.0      |     h57928b3_616         2.6 MB  conda-forge
+    jpeg-9d                    |       h8ffe710_0         366 KB  conda-forge
+    libblas-3.9.0              |            8_mkl         3.9 MB  conda-forge
+    libcblas-3.9.0             |            8_mkl         3.9 MB  conda-forge
+    liblapack-3.9.0            |            8_mkl         3.9 MB  conda-forge
+    libpng-1.6.37              |       h1d00b33_2         724 KB  conda-forge
+    mkl-2020.4                 |     hb70f87d_311       172.4 MB  conda-forge
+    numpy-1.19.5               |   py36hd1b969e_1         4.9 MB  conda-forge
+    python_abi-3.6             |          1_cp36m           4 KB  conda-forge
+    zlib-1.2.11                |    h62dcd97_1010         126 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       196.4 MB
+
+The following NEW packages will be INSTALLED:
+
+  dlib               conda-forge/win-64::dlib-19.22.0-py36h9f2b841_0
+  intel-openmp       conda-forge/win-64::intel-openmp-2021.2.0-h57928b3_616
+  jpeg               conda-forge/win-64::jpeg-9d-h8ffe710_0
+  libblas            conda-forge/win-64::libblas-3.9.0-8_mkl
+  libcblas           conda-forge/win-64::libcblas-3.9.0-8_mkl
+  liblapack          conda-forge/win-64::liblapack-3.9.0-8_mkl
+  libpng             conda-forge/win-64::libpng-1.6.37-h1d00b33_2
+  mkl                conda-forge/win-64::mkl-2020.4-hb70f87d_311
+  numpy              conda-forge/win-64::numpy-1.19.5-py36hd1b969e_1
+  python_abi         conda-forge/win-64::python_abi-3.6-1_cp36m
+  zlib               conda-forge/win-64::zlib-1.2.11-h62dcd97_1010
+
+The following packages will be UPDATED:
+
+  certifi            pkgs/main::certifi-2020.12.5-py36haa9~ --> conda-forge::certifi-2020.12.5-py36ha15d459_1
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+jpeg-9d              | 366 KB    | ############################################################################ | 100%
+libcblas-3.9.0       | 3.9 MB    | ############################################################################ | 100%
+libblas-3.9.0        | 3.9 MB    | ############################################################################ | 100%
+certifi-2020.12.5    | 144 KB    | ############################################################################ | 100%
+mkl-2020.4           | 172.4 MB  | ############################################################################ | 100%
+zlib-1.2.11          | 126 KB    | ############################################################################ | 100%
+python_abi-3.6       | 4 KB      | ############################################################################ | 100%
+libpng-1.6.37        | 724 KB    | ############################################################################ | 100%
+numpy-1.19.5         | 4.9 MB    | ############################################################################ | 100%
+liblapack-3.9.0      | 3.9 MB    | ############################################################################ | 100%
+dlib-19.22.0         | 3.5 MB    | ############################################################################ | 100%
+intel-openmp-2021.2. | 2.6 MB    | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>conda install -c conda-forge dlib
+
+CondaError: KeyboardInterrupt
+
+Terminate batch job (Y/N)? y
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>python mouse-cursor-control.py
+Traceback (most recent call last):
+  File "mouse-cursor-control.py", line 191, in <module>
+    pag.scroll(-40)
+  File "C:\Users\india\anaconda3\envs\mouse\lib\site-packages\pyautogui\__init__.py", line 528, in scroll
+    _autoPause(pause, _pause)
+  File "C:\Users\india\anaconda3\envs\mouse\lib\site-packages\pyautogui\__init__.py", line 164, in _autoPause
+    time.sleep(PAUSE)
+KeyboardInterrupt
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>python mouse-cursor-control.py
+Traceback (most recent call last):
+  File "mouse-cursor-control.py", line 82, in <module>
+    shape = face_utils.shape_to_np(shape)
+  File "C:\Users\india\anaconda3\envs\mouse\lib\site-packages\imutils\face_utils\helpers.py", line 37, in shape_to_np
+    coords[i] = (shape.part(i).x, shape.part(i).y)
+KeyboardInterrupt
+[ WARN:0] global C:\Users\appveyor\AppData\Local\Temp\1\pip-req-build-6uw63ony\opencv\modules\videoio\src\cap_msmf.cpp (434) `anonymous-namespace'::SourceReaderCB::~SourceReaderCB terminating async callback
+
+(mouse) C:\Users\india\Downloads\Mouse_Cursor_Control_Handsfree\Mouse_Cursor_Control_Handsfree>

@@ -1,0 +1,52 @@
+import uvicorn
+from fastapi import FastAPI
+import joblib,os
+import pandas as pd 
+import numpy as np 
+import seaborn as sns 
+import plotly.express as px
+import matplotlib.pyplot as plt 
+%matplotlib inline 
+import time 
+
+from sklearn.linear_model import LogisticRegression 
+from sklearn.naive_bayes import MultinomialNB 
+
+from sklearn.model_selection import train_test_split 
+from sklearn.metrics import classification_report 
+from sklearn.metrics import confusion_matrix 
+from nltk.tokenize import RegexpTokenizer  
+from nltk.stem.snowball import SnowballStemmer 
+from sklearn.feature_extraction.text import CountVectorizer   
+from sklearn.pipeline import make_pipeline 
+
+from PIL import Image 
+
+from bs4 import BeautifulSoup 
+from selenium import webdriver 
+import networkx as nx 
+
+import pickle 
+
+import warnings  
+warnings.filterwarnings('ignore')
+
+app = FastAPI()
+
+
+phish_model = open('phishingwebsite.ipynb','rb')
+phish_model_ls = joblib.load(phish_model)
+
+@app.get('/predict/{feature}')
+async def predict(features):
+	X_predict = []
+	X_predict.append(str(features))
+	y_Predict = phish_model_ls.predict(X_predict)
+	if y_Predict == 'bad':
+		result = "This is a Phishing Site"
+	else:
+		result = "This is not a Phishing Site"
+
+	return (features, result)
+if __name__ == '__main__':
+	uvicorn.run(app,host="127.0.0.1",port=8000)
